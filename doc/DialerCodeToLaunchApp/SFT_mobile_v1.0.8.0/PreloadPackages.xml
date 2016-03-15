@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
+  
+  <BasePackages>
+    <!-- Preloading SystemFunctionalTest App Version : 1.0.8.0; Packages Version : 10.0.0.0 -->
+    <PackageFile Name="OEMName.DiagTool.SystemTestService.spkg" Path="%QCPackageDir%\AddOnPackages\SFT_mobile_v1.0.8.0"/>
+    <PackageFile Name="OEMName.DiagTool.SystemFunctionalTest.spkg" Path="%QCPackageDir%\AddOnPackages\SFT_mobile_v1.0.8.0"/>
+    <PackageFile Name="OEMName.DiagTool.SFTConfig.spkg" Path="%QCPackageDir%\AddOnPackages\SFT_mobile_v1.0.8.0"/>
+
+    <!-- spkg for vcruntime140 is a dependency spkg for SystemTestService, this might not be neccessary in later releases -->
+    <PackageFile Name="Microsoft.Temp.VC140Runtime.spkg" Path="%QCPackageDir%\AddOnPackages\SFT_mobile_v1.0.8.0"/>
+  </BasePackages>
+
+</FeatureManifest>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+***********************************************************************************************
+QCOEMCustomization.xml
+
+WARNING:  THIS FILE IS UPDATED AUTOMATICALLY DO NOT MODIFY. To create images with custom OS
+          settings submit customization answer files to the OEMCustomization folder in postbld.
+
+***********************************************************************************************
+-->
+
+<ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"
+                     Name="QCOEMCustomization"
+                     Description="Root Customization File. This XML imports customization answer files that contain settings and variants for a custom OS image."
+                     Owner="Qualcomm"
+                     OwnerType="OEM">
+  <Imports>
+	<Import Source="$(QCPackageDir)\OEMCustomization\apn\Qualcomm_APNs.XML" />
+	<Import Source="$(QCPackageDir)\OEMCustomization\Ringtons\rington.xml" />
+	<!--Import Source="$(QCPackageDir)\OEMCustomization\BootScreen\CustomBootScreen.xml" />
+	<Import Source="$(QCPackageDir)\OEMCustomization\BootScreen\CustomShutdownScreen.xml" /-->
+	<Import Source="$(QCPackageDir)\OEMCustomization\FMRadio.xml" />
+	<Import Source="$(QCPackageDir)\OEMCustomization\PreApp\preapp.xml" />
+	<Import Source="$(QCPackageDir)\OEMCustomization\TTY.xml" />
+	<Import Source="$(QCPackageDir)\OEMCustomization\DataTransferIndicator.xml" />
+	<!-- Import Source="$(QCPackageDir)\OEMCustomization\ChargeSettings.xml" /-->
+	<Import Source="$(QCPackageDir)\OEMCustomization\HAC.xml" />
+	<Import Source="$(QCPackageDir)\OEMCustomization\EmergencyNotifications.xml" />
+	<Import Source="$(QCPackageDir)\OEMCustomization\DataConnectionIcon\DataConnectionIcon.xml" />
+	<Import Source="$(QCPackageDir)\OEMCustomization\DeviceInfo.xml" />
+	<Import Source="$(QCPackageDir)\OEMCustomization\ConnectionSpeedOption\ConnectionSpeedOption.xml" />
+	<Import Source="$(QCPackageDir)\OEMCustomization\EnableStaticIP.xml" />
+	<Import Source="$(QCPackageDir)\OEMCustomization\MMSAutomaticDownload.xml" />
+	<Import Source="$(QCPackageDir)\OEMCustomization\SystemFunctionalTest.xml" /> 
+  </Imports>
+</ImageCustomizations>

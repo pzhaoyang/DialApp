@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<wap-provisioningdoc>
+   <characteristic type="AppInstall"> 
+      <characteristic type="{b418f0cb-16f2-41b8-a66f-04e265f53625}"> 
+         <parm name="InstallInfo" 
+            value="\Programs\CommonFiles\Xaps\DialerAppSimple_Release_ARM.xap;\Programs\CommonFiles\Xaps\DialerAppSimple_License.xml;{0615F3AE-0F7D-4ba9-B254-799B32DF65E8};{C1CFA574-9F06-46b9-AE4A-C20E0B00DBC1};FALSE;FALSE;FALSE"/>
+      </characteristic>
+   </characteristic>
+</wap-provisioningdoc>

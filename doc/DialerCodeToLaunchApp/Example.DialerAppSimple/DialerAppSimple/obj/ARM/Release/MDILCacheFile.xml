@@ -1,0 +1,12 @@
+﻿<xapCache source="C:\Work\Example.DialerAppSimple.1\DialerAppSimple\Bin\ARM\Release\DialerAppSimple_Release_ARM.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="10/29/2015 1:20:34 PM">
+  <file source="C:\Work\Example.DialerAppSimple.1\DialerAppSimple\obj\ARM\Release\DialerAppSimple.dll" archivePath="DialerAppSimple.dll" lastWriteTime="10/29/2015 1:20:34 PM" />
+  <file source="C:\Work\Example.DialerAppSimple.1\DialerAppSimple\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="8/31/2015 12:48:46 PM" />
+  <file source="C:\Work\Example.DialerAppSimple.1\DialerAppSimple\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="8/31/2015 12:48:46 PM" />
+  <file source="C:\Work\Example.DialerAppSimple.1\DialerAppSimple\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="8/31/2015 12:48:46 PM" />
+  <file source="C:\Work\Example.DialerAppSimple.1\DialerAppSimple\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="8/31/2015 12:48:46 PM" />
+  <file source="C:\Work\Example.DialerAppSimple.1\DialerAppSimple\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="8/31/2015 12:48:46 PM" />
+  <file source="C:\Work\Example.DialerAppSimple.1\DialerAppSimple\Bin\ARM\Release\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="10/29/2015 1:20:23 PM" />
+  <file source="C:\Work\Example.DialerAppSimple.1\DialerAppSimple\Bin\ARM\Release\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="8/31/2015 12:48:46 PM" />
+  <file source="C:\Work\Example.DialerAppSimple.1\DialerAppSimple\Bin\ARM\Release\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="8/31/2015 12:48:46 PM" />
+  <file source="C:\Work\Example.DialerAppSimple.1\DialerAppSimple\Bin\ARM\Release\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="10/29/2015 1:20:23 PM" />
+</xapCache>

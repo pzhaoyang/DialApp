@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialerAppSimple", "DialerAppSimple\DialerAppSimple.csproj", "{B418F0CB-16F2-41B8-A66F-04E265F53625}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B418F0CB-16F2-41B8-A66F-04E265F53625}.Debug|ARM.ActiveCfg = Debug|ARM
+		{B418F0CB-16F2-41B8-A66F-04E265F53625}.Debug|ARM.Build.0 = Debug|ARM
+		{B418F0CB-16F2-41B8-A66F-04E265F53625}.Debug|ARM.Deploy.0 = Debug|ARM
+		{B418F0CB-16F2-41B8-A66F-04E265F53625}.Release|ARM.ActiveCfg = Release|ARM
+		{B418F0CB-16F2-41B8-A66F-04E265F53625}.Release|ARM.Build.0 = Release|ARM
+		{B418F0CB-16F2-41B8-A66F-04E265F53625}.Release|ARM.Deploy.0 = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

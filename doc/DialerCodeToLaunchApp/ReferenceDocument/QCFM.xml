@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FeatureManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
+  <Features>
+    <OEM>
+      <!-- OEM Packages that should be replaced by QWPCT or OEM -->
+      <PackageFile Path="%QCPackageDir%\spkg\mtp" Name="Qualcomm.QC8909_MTP.qcaud.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_DEFAULT</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\mtp" Name="Qualcomm.QC8909_MTP.ACSP.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_DEFAULT</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.OEMAutobrightness.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_DEFAULT</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\mtp" Name="Qualcomm.QC8909.PlatformInfo_MTP.spkg">
+        <FeatureIDs>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.smbios_cfg.spkg">
+        <FeatureIDs>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <!-- Device Specific packages -->
+      <PackageFile Path="%QCPackageDir%\spkg\mtp_test" Name="Qualcomm.QC8909.PlatformInfo_MTP.spkg">
+        <FeatureIDs>
+          <FeatureID>MTPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\mtp_test" Name="Qualcomm.QC8909_MTP_TEST.qcaud.spkg">
+        <FeatureIDs>
+          <FeatureID>MTPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\mtp_test" Name="Qualcomm.QC8909_MTP_TEST.ACSP.spkg">
+        <FeatureIDs>
+          <FeatureID>MTPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qrd" Name="Qualcomm.QC8909.PlatformInfo_QRD.spkg">
+        <FeatureIDs>
+          <FeatureID>QRD</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qrd" Name="Qualcomm.QC8909_QRD.qcaud.spkg">
+        <FeatureIDs>
+          <FeatureID>QRD</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qrd" Name="Qualcomm.QC8909_QRD.ACSP.spkg">
+        <FeatureIDs>
+          <FeatureID>QRD</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qrd_test" Name="Qualcomm.QC8909.PlatformInfo_QRD.spkg">
+        <FeatureIDs>
+          <FeatureID>QRDTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qrd_test" Name="Qualcomm.QC8909_QRD_TEST.ACSP.spkg">
+        <FeatureIDs>
+          <FeatureID>QRDTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qrd_test" Name="Qualcomm.QC8909_QRD_TEST.qcaud.spkg">
+        <FeatureIDs>
+          <FeatureID>QRDTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\cdp" Name="Qualcomm.QC8909.PlatformInfo_CDP.spkg">
+        <FeatureIDs>
+          <FeatureID>CDP</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\cdp" Name="Qualcomm.QC8909_CDP.qcaud.spkg">
+        <FeatureIDs>
+          <FeatureID>CDP</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\cdp" Name="Qualcomm.QC8909_CDP.ACSP.spkg">
+        <FeatureIDs>
+          <FeatureID>CDP</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\cdp_test" Name="Qualcomm.QC8909.PlatformInfo_CDP.spkg">
+        <FeatureIDs>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\cdp_test" Name="Qualcomm.QC8909_CDP_TEST.qcaud.spkg">
+        <FeatureIDs>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\cdp_test" Name="Qualcomm.QC8909_CDP_TEST.ACSP.spkg">
+        <FeatureIDs>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcAccGyroMPU6050.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_GYRO_MPU3050</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qrd" Name="Qualcomm.QC8909.qcAccBMA223.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_ACCEL_BMA223</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\mtp" Name="Qualcomm.QC8909.qcAlsPrxAPDS9900.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_PROX_APDS9900</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\cdp" Name="Qualcomm.QC8909.qcAlsPrxAPDS9900.spkg">
+        <FeatureIDs>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\mtp" Name="Qualcomm.QC8909.qcAlsCalibrationMTP.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_PROX_APDS9900</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qrd" Name="Qualcomm.QC8909.qcAlsPrxTMD27723.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_PROX_TMD27723</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\mtp" Name="Qualcomm.QC8909.qcMagAKM8963.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_COMPASS_AKM8963</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\cdp" Name="Qualcomm.QC8909.qcMagAKM8963.spkg">
+        <FeatureIDs>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qrd" Name="Qualcomm.QC8909.qcMagMMC3416xPJ.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_COMPASS_MMC3416XPJ</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qccamfrontsensor_ov2680_2m_bayer.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_CAMERA_FRONT_OV2680</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qccamfrontsensor_gc2355_2m_bayer.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_CAMERA_FRONT_OV2355</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qccamrearsensor_ov8858_8m_bayer.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_CAMERA_REAR_OV8858</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcSynapticsTouch.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_TOUCH_SYNAPTICS</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcAtmelTouch.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_TOUCH_ATMEL</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcTouchScreenRegsitry720p.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_BUTTONS_720P</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcSensorsTraceTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.ABDA.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.ABDO.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.CrashdumpVariables.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_DEFAULT</FeatureID>
+          <FeatureID>CUSTOMIZATION1</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.Apollo_PILTest.WP.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.DiagBridge.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.DiagCmdTestApp.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg%QCNHDebug%" Name="Qualcomm.QC8909.startupnsh.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.vcmtest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.DiagCmdTestDriver.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcWicEncoder8909.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+	  <FeatureID>QC_PRODUCTION</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QCBCryptTestDrv.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.DiagCSITestApp.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.DiagCSITestDriver.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.DiagSettingsApp.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcqdss.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qdsstestdriver.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QxdmLivelogFilter.wp63.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcbtftmtest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.fmftmapp.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.BattProv.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_MMOS</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+          <FeatureID>QC_WTT</FeatureID>
+          <FeatureID>QC_CASE</FeatureID>
+          <FeatureID>QC_CLEAN</FeatureID>
+          <FeatureID>QC_SELFHOST</FeatureID>
+          <FeatureID>QC_TESTOS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.BT_factory.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_MMOS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiAudioTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiGPSTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiASensorTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiBacklightTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiBatteryTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiBluetoothTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiFlashlightTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiCameraTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiGreenLEDTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiGSensorTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiKeypadBacklightTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiKeypadTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiLCDTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiLSensorTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiMSensorTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiPSensorTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiRedLEDTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiSIMTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiSDTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiTouchTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiVibratorTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiWiFiTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcBtftmdiagapp.wp.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiBluetoothFTMTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiFMFTMTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.qc_ftmdiagapp.wp.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiFMTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiWiFiFTMTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiResen-US.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiReszh-CHS.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MmiPhoneCallTest.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\mmos" Name="Qualcomm.QC8909.QcShutdownSvcMmos.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_MMOS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.DiagCSI.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.DiagRouterUSB.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+          <FeatureID>QC_TESTOS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.DiagRouter.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_MMOS</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+          <FeatureID>QC_WTT</FeatureID>
+          <FeatureID>QC_CASE</FeatureID>
+          <FeatureID>QC_CLEAN</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QCDiagLogging.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QCDiagKernelLogging.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.MMI_km.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_TEST</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcShutdownSvc.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+          <FeatureID>QC_WTT</FeatureID>
+          <FeatureID>QC_CASE</FeatureID>
+          <FeatureID>QC_CLEAN</FeatureID>
+          <FeatureID>QC_SELFHOST</FeatureID>
+          <FeatureID>QC_TESTOS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcGnssSvc.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+          <FeatureID>QC_WTT</FeatureID>
+          <FeatureID>QC_CASE</FeatureID>
+          <FeatureID>QC_CLEAN</FeatureID>
+          <FeatureID>QC_SELFHOST</FeatureID>
+          <FeatureID>QC_TESTOS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.BT_MainOS.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+          <FeatureID>QC_HEALTH</FeatureID>
+          <FeatureID>QC_WTT</FeatureID>
+          <FeatureID>QC_CASE</FeatureID>
+          <FeatureID>QC_CLEAN</FeatureID>
+          <FeatureID>QC_SELFHOST</FeatureID>
+          <FeatureID>QC_TESTOS</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\factory" Name="Qualcomm.QC8909.MMI_Svc.spkg">
+        <FeatureIDs>
+          <FeatureID>QC_RETAIL</FeatureID>
+          <FeatureID>QC_FACTORY</FeatureID>
+          <FeatureID>QC_PRODUCTION</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.EFIESP.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_DEFAULT</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.MainOS.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_DEFAULT</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.PLAT.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_DEFAULT</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcCamPostProcPlugin.spkg">
+        <FeatureIDs>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+          <FeatureID>CDP</FeatureID>
+          <FeatureID>CDPTEST</FeatureID>
+          <FeatureID>QRD</FeatureID>
+          <FeatureID>QRDTEST</FeatureID>
+	  <FeatureID>OEM_DEFAULT</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.QC8909.SVPlatformInfo.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_DEFAULT</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+      <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.QC8909.smbios_cfg.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_DEFAULT</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+	  <PackageFile Path="%QCPackageDir%\spkg\mtp" Name="Qualcomm.QC8909.AK09911.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_COMPASS_AK09911</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+	  <PackageFile Path="%QCPackageDir%\spkg\mtp" Name="Qualcomm.QC8909.AlsPrxSTK3311.spkg">
+        <FeatureIDs>
+          <FeatureID>OEM_PROX_STK3311</FeatureID>
+          <FeatureID>MTP</FeatureID>
+          <FeatureID>MTPSMB</FeatureID>
+          <FeatureID>MTPTEST</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+	
+	<PackageFile Name="OEMName.PhoneCallCustomizations.DiagnosticAppPreload.spkg" Path="%QCPackageDir%\AddOnPackages\DialerApp">
+		<FeatureIDs>
+		  <FeatureID>DIAGNOSTIC_APP_PRELOAD</FeatureID>  
+		</FeatureIDs>  
+	</PackageFile>
+	 
+    <PackageFile Name="OEMName.DiagTool.SystemTestService.spkg" Path="%QCPackageDir%\AddOnPackages\SFT_mobile_v1.0.8.0">
+		<FeatureIDs>  
+			<FeatureID>SFT_APP_PRELOAD</FeatureID>  
+		</FeatureIDs>  
+	</PackageFile>  
+	
+    <PackageFile Name="OEMName.DiagTool.SystemFunctionalTest.spkg" Path="%QCPackageDir%\AddOnPackages\SFT_mobile_v1.0.8.0">
+	    <FeatureIDs>  
+            <FeatureID>SFT_APP_PRELOAD</FeatureID>  
+        </FeatureIDs>  
+	</PackageFile>  
+	
+    <PackageFile Name="OEMName.DiagTool.SFTConfig.spkg" Path="%QCPackageDir%\AddOnPackages\SFT_mobile_v1.0.8.0">
+	    <FeatureIDs>  
+            <FeatureID>SFT_APP_PRELOAD</FeatureID>  
+        </FeatureIDs>  
+	</PackageFile>  
+	
+	<PackageFile Name="Microsoft.Temp.VC140Runtime.spkg" Path="%QCPackageDir%\AddOnPackages\SFT_mobile_v1.0.8.0">
+	    <FeatureIDs>  
+            <FeatureID>SFT_APP_PRELOAD</FeatureID>  
+        </FeatureIDs>  
+	</PackageFile>  
+	
+
+    </OEM>
+  </Features>
+  <SOCPackages>
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.EFIESP.spkg" SOC="QC8909_4GB" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.MainOS.spkg" SOC="QC8909_4GB" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.PLAT.spkg" SOC="QC8909_4GB" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.EFIESP.spkg" SOC="QC8909" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.MainOS.spkg" SOC="QC8909" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.PLAT.spkg" SOC="QC8909" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.EFIESP.spkg" SOC="QC8209_4GB" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.MainOS.spkg" SOC="QC8209_4GB" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.PLAT.spkg" SOC="QC8209_4GB" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.EFIESP.spkg" SOC="QC8209" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.MainOS.spkg" SOC="QC8209" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.PLAT.spkg" SOC="QC8209" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.EFIESP.spkg" SOC="QC8208_4GB" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.MainOS.spkg" SOC="QC8208_4GB" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.PLAT.spkg" SOC="QC8208_4GB" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.EFIESP.spkg" SOC="QC8208" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.MainOS.spkg" SOC="QC8208" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.PLAT.spkg" SOC="QC8208" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.EFIESP.spkg" SOC="QC8009_4GB" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.MainOS.spkg" SOC="QC8009_4GB" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.PLAT.spkg" SOC="QC8009_4GB" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.EFIESP.spkg" SOC="QC8009" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.MainOS.spkg" SOC="QC8009" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.PLAT.spkg" SOC="QC8009" />
+  </SOCPackages>
+  <BasePackages>
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.MainOS.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.PLAT.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg\qwpct" Name="Qualcomm.EmptyPackage.EFIESP.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.subsys.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcEhciFilter.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.UsbFnFilter.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.hwnhaptics.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.hwnled.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qccamplatform.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.ABD.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.ADCM.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QCListenSoundModel.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.AudioDeviceDriver.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.bam_dmux.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.BCryptCipher_KM.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.HalExtQCTimer.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.ipc_router.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.pil.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcadc.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcBattMiniclass.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcBattMngr.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcBmsVm.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcbluetooth.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qccamflash.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qccamvfe.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qccdi.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QCCI.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcdxdriver.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcfmminiport.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcfmtransport.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcgnss.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcgpio.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qci2c.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcKmdBam.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcPmic.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcPmicApps.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcPmicGpio.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcspmi.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcVidEncmftH263.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcVidEncmftH264.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcVidEncMftMPEG4.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QC_PEP.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qmux.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qualcomm_uart.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.remotefs.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.RPEN.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.scm.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.smd.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.smmu.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.ssd.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.ssm.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.wlan.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.wlan_caps.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.WMRil.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QCSI.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcdx11compiler.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcvidencum.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qccamtuningdata.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcspi.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg%QCNHDebug%" Name="Qualcomm.QC8909.WCNSSPeriImage.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcimssink.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcimssrc.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcvss.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qccomposite.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.HalExtQCWdogTimer.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcPmic3P.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QSOCKET.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.TouchDetectionDriver.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.GTtouch.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.QcLTECoexMgr.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.TrEE.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qcdrvlog.spkg" />
+    <PackageFile Path="%QCPackageDir%\spkg" Name="Qualcomm.QC8909.qccamavs.spkg" />
+  </BasePackages>
+</FeatureManifest>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

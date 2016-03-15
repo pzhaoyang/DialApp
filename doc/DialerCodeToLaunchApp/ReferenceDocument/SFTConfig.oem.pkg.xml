@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="urn:Microsoft.WindowsPhone/PackageSchema.v8.00"
+   Owner="OEMName"
+   OwnerType="OEM"     
+   ReleaseType="Test"
+   Platform=""
+   Component="DiagTool"
+   SubComponent="SFTConfig"
+   Partition="MainOS">
+   <Components>
+      <OSComponent>
+         <Files>
+           <!-- Configuration File Path for SystemFunctionalTest App Version : 1.0.8.0 -->
+           <File Source="SFTConfig.xml" DestinationDir="$(runtime.data)\users\public\Pictures" Name="SFTConfig.xml"/>           
+         </Files>
+	  <!--hide SFT from APP list-->
+	  <RegKeys> 
+	    <RegKey
+	          KeyName="$(hklm.software)\Microsoft\PackageManager\Blacklist">
+			<RegValue Name="{102c0eb2-28e7-4dce-86a3-dd52eb8e3743}" 
+			          Value="00000000" 
+			          Type="REG_DWORD"/>
+	  	</RegKey> 
+	  </RegKeys>
+      </OSComponent>
+   </Components>
+</Package>

@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Example Mobile Configuration File for SystemFunctionalTest UWP App Version : 1.0.8.0 -->
+<SystemFunctionalTest>
+
+    <!-- default is phone language dependent -->
+    <Language Name="zh-CN" />
+
+    <!-- default is true -->
+    <Log Enable="True" />
+
+    <Phase Name="All 完整测试">
+        <MainMenu >
+            <MenuItem Name="Auto"/>
+            <MenuItem Name="Manual"/>
+            <MenuItem Name="ClearResult"/>
+
+            <MenuItem Name="SystemInformation">
+                <Property>Friendly Name</Property>
+                <Property>Device Name</Property>
+                <Property>Manufacture</Property>
+                <Property>Model Name</Property>
+                <Property>Operator Name</Property>
+                <Property>OS Version</Property>
+                <Property>Chip SOC Version</Property>
+                <Property>Firmware Version</Property>
+                <Property>Hardware Version</Property>
+                <Property>Radio Software Version</Property>
+                <Property>Radio Hardware Version</Property>
+                <Property>Screen Resolution</Property>
+                <Property>App Version</Property>
+                <!-- additional service info (for phone only) -->
+                <Property>Cellular Class</Property>
+                <Property>Mobile Data Class</Property>
+                <Property>IMEI</Property>
+                <Property>WLAN MAC</Property>
+                <Property>BT MAC</Property>
+            </MenuItem>
+
+            <MenuItem Name="ResetPhone"/>
+            <MenuItem Name="ShutdownPhone"/>
+        </MainMenu>
+
+        <TestMenu>
+            <MenuItem Name="Touch">
+                <!-- Optional additional tests : MultiPoints, MultiDraw -->
+                <SubItem Name="MultiPoints">
+                    <!-- maximum number is valid from 1 to 10, depending on actual multi-touch capability -->
+                    <Property MultiPointCount="2" />
+                </SubItem>
+                <SubItem Name="MultiDraw" >
+                    <!-- maximum number is valid from 1 to 3, depending on actual multi-touch capability -->
+                    <Property MultiDrawCount="2" />
+                </SubItem>
+            </MenuItem>
+            <MenuItem Name="Display">
+                <!-- user defined colors, maximum 10 addtional color for colortest 
+                 if no valid colortest is defined, basic colors will be used for test
+                 basic colors are : white/black/blue/red/green -->
+                <ColorTest Color="#FFFFFF" >White</ColorTest>
+                <ColorTest Color="#8F8F8F" >Gray</ColorTest>
+                <ColorTest Color="#000000" >Black</ColorTest>
+                <ColorTest Color="#FF0000" >Red</ColorTest>
+                <ColorTest Color="#00FF00" >Green</ColorTest>
+                <ColorTest Color="#0000FF" >Blue</ColorTest>
+                <ColorTest Color="#FFFF00" >Yellow</ColorTest>
+                <ColorTest Color="#00FFFF" >Cyan</ColorTest>
+                <ColorTest Color="#FF00FF" >Magenta</ColorTest>
+            </MenuItem>
+            <MenuItem Name="Brightness"/>
+            <MenuItem Name="Backlight"/>
+            <MenuItem Name="Vibrator"/>
+            <MenuItem Name="Battery"/>
+
+            <MenuItem Name="SD"/>
+
+            <MenuItem Name="SIM">
+              <Property ShowInfo="True" />
+            </MenuItem>
+
+            <MenuItem Name="WiFi"/>
+            <MenuItem Name="Bluetooth"/>
+            <MenuItem Name="GPS"/>
+
+            <MenuItem Name="RearCamera"/>
+            <MenuItem Name="FrontCamera"/>
+            <MenuItem Name="Flashlight"/>
+
+            <MenuItem Name="Compass"/>
+            <MenuItem Name="Accelerometer"/>
+            <MenuItem Name="Gyrometer"/>
+            <MenuItem Name="Proximity"/>
+            <MenuItem Name="Light"/>
+
+            <MenuItem Name="Speaker">
+                <!-- configure to play a audio clip before recording to verify audio output is OK. -->
+                <Property EnsureAudioOut="Auto" AudioOutSource="StereoChannelTest.wav" />
+            </MenuItem>
+            <MenuItem Name="Earpiece"/>
+            <MenuItem Name="Headset"/>
+            <MenuItem Name="FMRadio">
+                <RadioSearch RegionCode="2"/>
+                <!-- 1:NorthAmerica, 2:World(default), 3:Japan -->
+                <Channel Frequency="91.7" />
+                <Channel Frequency="98.8" />
+                <Channel Frequency="98.5" />
+                <Channel Frequency="100.7" />
+            </MenuItem>
+
+            <MenuItem Name="Keypad">
+                <Button>Back</Button>
+                <Button>Start</Button>
+                <Button>Search</Button>
+                <Button>VolUp</Button>
+                <Button>VolDown</Button>
+                <Button>Camera</Button>
+                <Button>Power</Button>
+                <Button>HeadsetButton</Button>
+            </MenuItem>
+
+            <MenuItem Name="Dialer">
+                <!-- Set dialer number and name.  For mobile platform only. -->
+                <DialerNumber>0123456789</DialerNumber>
+                <DialerName>Friend</DialerName>
+            </MenuItem>
+
+        </TestMenu>
+    </Phase>
+
+    <Phase Name="PCBA 板测试">
+        <MainMenu>
+            <MenuItem Name="SystemInformation">
+                <Property>Device Name</Property>
+                <Property>Model Name</Property>
+                <Property>Firmware Version</Property>
+                <Property>Hardware Version</Property>
+                <Property>Chip SOC Version</Property>
+                <Property>Radio Software Version</Property>
+                <Property>Radio Hardware Version</Property>
+                <Property>Screen Resolution</Property>
+                <Property>App Version</Property>
+            </MenuItem>
+
+            <MenuItem Name="Auto"/>
+            <MenuItem Name="Manual"/>
+            <MenuItem Name="ClearResult"/>
+        </MainMenu>
+
+        <TestMenu>
+            <MenuItem Name="SD">
+                <!-- AutoPass Criteria: Setup a detected (concurrent) SD storage count to trigger pass/fail automatically -->
+                <Threshold Count="1" />
+            </MenuItem>
+          
+            <MenuItem Name="SIM">
+              <!-- AutoPass Criteria: Setup a entry state of SIM to trigger pass/fail automatically.
+                   State of SIM : NoCard (default) / NotReady (card inserted but not ready) / Ready 
+              -->
+              <!-- For single SIM -->
+              <Threshold SIM1="NotReady" />
+              <!-- For dual SIM -->
+              <!--
+              <Threshold SIM1="NotReady" SIM2="NoCard" />
+              -->              
+            </MenuItem>/>
+
+            <MenuItem Name="Vibrator"/>
+            <MenuItem Name="Brightness"/>
+            <MenuItem Name="Backlight"/>
+            <MenuItem Name="Keypad">
+                <Button>Back</Button>
+                <Button>Start</Button>
+                <Button>Search</Button>
+                <Button>VolUp</Button>
+                <Button>VolDown</Button>
+            </MenuItem>
+
+            <MenuItem Name="Accelerometer"/>
+            <MenuItem Name="Proximity"/>
+            <MenuItem Name="Light"/>
+
+            <MenuItem Name="RearCamera"/>
+
+            <MenuItem Name="Speaker"/>
+            <MenuItem Name="Earpiece"/>
+            <MenuItem Name="Headset"/>
+            <MenuItem Name="FMRadio"/>
+
+            <MenuItem Name="WiFi">
+                <!-- Predefined available network name list used for AutoPass (Max count = 10). -->
+                <AvailableName>WifiTest_A</AvailableName>
+                <AvailableName>WifiTest_B</AvailableName>
+                <ConnectionName>WifiTest_A</ConnectionName>
+                <Threshold SignalBar="4" />
+            </MenuItem>
+            <MenuItem Name="Bluetooth">
+                <!-- Predefined available Bluetooth name list used for AutoPass (Max count = 10). -->
+                <AvailableName>Windows Phone</AvailableName>
+            </MenuItem>
+            <MenuItem Name="GPS">
+                <!-- Maximum allowed position fix time (since app start) set in seconds for AutoPass -->
+                <Threshold AllowedMaxSearchTime="180" LocationMatch="Any" />
+            </MenuItem>
+            <MenuItem Name="Dialer">
+                <!-- Set dialer number and name.  For mobile platform only. -->
+                <DialerNumber>0123456789</DialerNumber>
+                <DialerName>Friend</DialerName>
+            </MenuItem>
+        </TestMenu>
+    </Phase>
+
+    <Phase Name="Others 其它">
+        <MainMenu>
+            <MenuItem Name="SystemInformation"/>
+            <MenuItem Name="Manual"/>
+            <MenuItem Name="ClearResult"/>
+            <MenuItem Name="ResetPhone"/>
+            <MenuItem Name="ShutdownPhone"/>
+        </MainMenu>
+
+        <TestMenu>
+            <MenuItem Name="Battery"/>
+        </TestMenu>
+    </Phase>
+
+</SystemFunctionalTest>

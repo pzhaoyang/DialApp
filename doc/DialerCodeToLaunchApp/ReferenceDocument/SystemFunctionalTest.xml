@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>  
+<ImageCustomizations xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate"  
+                     Name="DiagnosticAppsDialerCodes"  
+                     Description="Use to configure the dialer to start the primary OEM dialer application."  
+                     Owner=""  
+                     OwnerType="OEM"> 
+
+  <Static>
+
+    <Settings Path="Phone/PartnerAppSupport"> 
+      <Setting Name="PartnerAppTaskUri" Value="app://b418f0cb-16f2-41b8-a66f-04e265f53625/_default" />    
+      <Setting Name="PartnerAppProvisioningFilePath" Value="\Programs\CommonFiles\Provisioning\OEM\MPAP_DialerAppSimple_01.provxml" />
+
+      <!-- Configure these settings to add additional dialer codes that can be accepted and passed as a parameter to the 
+           primary OEM dialer app. You can add any number of additional diagnostic codes you want to use. Each code should begin with ## -->
+      <Setting Name="PartnerImmediateDialStrings" Value="##1115#" />
+      <Setting Name="PartnerNonImmediateDialStrings" Value="" />
+
+    </Settings>  
+
+  </Static>
+
+</ImageCustomizations>
